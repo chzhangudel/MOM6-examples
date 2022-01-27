@@ -183,6 +183,12 @@ SMAG_LAP_CONST = 0.15           !   [nondim] default = 0.0
 BIHARMONIC = False              !   [Boolean] default = True
                                 ! If true, use a biharmonic horizontal viscosity. BIHARMONIC may be used with
                                 ! LAPLACIAN.
+USE_HOR_VISC_PYTHON = True      !   [Boolean] default = False
+                                ! Invoke a python script to update the lateral viscous accelerations.
+PYTHON_DIR = "/scratch/cimes/cz3321/MOM6/MOM6-examples/src/MOM6/config_src/external/ML_Forpy/" ! default = "."
+                                ! The directory in which Python scripts are found.
+PYTHON_FILE = "f2p2f"           ! default = "forpy"
+                                ! The name of the Python script for updating the lateral viscous acceleration.
 
 ! === module MOM_vert_friction ===
 DIRECT_STRESS = True            !   [Boolean] default = False

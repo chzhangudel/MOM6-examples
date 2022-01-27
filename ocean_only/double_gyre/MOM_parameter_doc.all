@@ -772,6 +772,12 @@ HORVISC_BOUND_COEF = 0.8        !   [nondim] default = 0.8
 USE_KH_BG_2D = False            !   [Boolean] default = False
                                 ! If true, read a file containing 2-d background harmonic viscosities. The final
                                 ! viscosity is the maximum of the other terms and this background value.
+USE_HOR_VISC_PYTHON = True      !   [Boolean] default = False
+                                ! Invoke a python script to update the lateral viscous accelerations.
+PYTHON_DIR = "/scratch/cimes/cz3321/MOM6/MOM6-examples/src/MOM6/config_src/external/ML_Forpy/" ! default = "."
+                                ! The directory in which Python scripts are found.
+PYTHON_FILE = "f2p2f"           ! default = "forpy"
+                                ! The name of the Python script for updating the lateral viscous acceleration.
 
 ! === module MOM_vert_friction ===
 VERT_FRICTION_2018_ANSWERS = False !   [Boolean] default = False
