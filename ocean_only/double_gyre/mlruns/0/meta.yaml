@@ -1,0 +1,4 @@
+artifact_location: file:///scratch/cimes/cz3321/MOM6/MOM6-examples/ocean_only/double_gyre/mlruns/0
+experiment_id: '0'
+lifecycle_stage: active
+name: Default

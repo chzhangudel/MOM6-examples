@@ -18,7 +18,9 @@ module purge
 #module load netcdf/intel-2021.1/hdf5-1.10.6/openmpi-4.1.0/4.7.4
 #source activate ~/conda_forpy
 module load anaconda3/2021.5 intel/2021.1.2 openmpi/intel-2021.1/4.1.0 hdf5/intel-2021.1/1.10.6 netcdf/intel-19.1/hdf5-1.10.6/4.7.4
-source activate conda_forpy2
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/lib64:/home/cz3321/.conda/envs/conda_forpy2/lib
+#source activate conda_forpy2
+source activate ~/conda_forpy
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/lib64:/home/cz3321/.conda/envs/conda_forpy2/lib
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/lib64:/home/cz3321/conda_forpy/lib
 
 srun -n 1 ../../build/intel/ocean_only/repro/MOM6

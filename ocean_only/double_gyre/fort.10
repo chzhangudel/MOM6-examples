@@ -1,0 +1,105 @@
+MOM_mixed_layer_restrat: unknown
+  MOM_mixed_layer_restrat MIXEDLAYER_RESTRAT: False
+MOM_diagnostics: unknown
+  MOM_diagnostics DIAG_EBT_MONO_N2_COLUMN_FRACTION: 0.0
+  MOM_diagnostics DIAG_EBT_MONO_N2_DEPTH: -1.0
+  MOM_diagnostics INTERNAL_WAVE_SPEED_TOL: 0.001
+  MOM_diagnostics INTERNAL_WAVE_SPEED_MIN: 0.0
+  MOM_diagnostics INTERNAL_WAVE_SPEED_BETTER_EST: True
+  MOM_diagnostics DEFAULT_2018_ANSWERS: False
+  MOM_diagnostics REMAPPING_2018_ANSWERS: False
+MOM_diabatic_driver: unknown
+MOM_tracer_advect: unknown
+  MOM_tracer_advect DT: 1200.0
+  MOM_tracer_advect DEBUG: False
+  MOM_tracer_advect TRACER_ADVECTION_SCHEME: PLM
+MOM_tracer_hor_diff: unknown
+  MOM_tracer_hor_diff KHTR: 0.0
+  MOM_tracer_hor_diff KHTR_SLOPE_CFF: 0.0
+  MOM_tracer_hor_diff KHTR_MIN: 0.0
+  MOM_tracer_hor_diff KHTR_MAX: 0.0
+  MOM_tracer_hor_diff KHTR_PASSIVITY_COEFF: 0.0
+  MOM_tracer_hor_diff KHTR_PASSIVITY_MIN: 0.5
+  MOM_tracer_hor_diff DIFFUSE_ML_TO_INTERIOR: False
+  MOM_tracer_hor_diff CHECK_DIFFUSIVE_CFL: False
+  MOM_tracer_hor_diff MAX_TR_DIFFUSION_CFL: -1.0
+  MOM_tracer_hor_diff RECALC_NEUTRAL_SURF: False
+MOM_neutral_diffusion: unknown
+  MOM_neutral_diffusion USE_NEUTRAL_DIFFUSION: False
+MOM_lateral_boundary_diffusion: unknown
+  MOM_lateral_boundary_diffusion USE_LATERAL_BOUNDARY_DIFFUSION: False
+  MOM_tracer_hor_diff DEBUG: False
+MOM_obsolete_diagnostics: unknown
+  MOM_obsolete_diagnostics OBSOLETE_DIAGNOSTIC_IS_FATAL: True
+MOM_sum_output: unknown
+  MOM_sum_output CALCULATE_APE: True
+  MOM_sum_output WRITE_STOCKS: True
+  MOM_sum_output ENABLE_THERMODYNAMICS: False
+  MOM_sum_output DT: 1200.0
+  MOM_sum_output MAXTRUNC: 0
+  MOM_sum_output MAX_ENERGY: 0.0
+  MOM_sum_output MAXVEL: 6.0
+  MOM_sum_output MAX_ENERGY as used: 360.0
+  MOM_sum_output ENERGYFILE: ocean.stats
+  MOM_sum_output output_path/ENERGYFILE: ./ocean.stats
+  MOM_sum_output DATE_STAMPED_STDOUT: False
+  MOM_sum_output TIMEUNIT: 8.64E+04
+  MOM_sum_output READ_DEPTH_LIST: True
+  MOM_sum_output DEPTH_LIST_MIN_INC: 1.0E-06
+  MOM_sum_output DEPTH_LIST_FILE: Depth_list.nc
+  MOM_sum_output REQUIRE_DEPTH_LIST_CHECKSUMS: False
+  MOM_sum_output UPDATE_DEPTH_LIST_CHECKSUMS: True
+  MOM_sum_output TIMEUNIT: 8.64E+04
+  MOM_sum_output ENERGYSAVEDAYS (Time): 1:0
+  MOM_sum_output ENERGYSAVEDAYS_GEOMETRIC (Time): 0:0
+ocean_stochastics_init: unknown
+  ocean_stochastics_init DO_SPPT: False
+  ocean_stochastics_init PERT_EPBL: False
+MOM_surface_forcing: unknown
+  MOM_surface_forcing ENABLE_THERMODYNAMICS: False
+  MOM_surface_forcing INPUTDIR: INPUT
+  MOM_surface_forcing ADIABATIC: True
+  MOM_surface_forcing VARIABLE_WINDS: False
+  MOM_surface_forcing VARIABLE_BUOYFORCE: False
+  MOM_surface_forcing BUOY_CONFIG: zero
+  MOM_surface_forcing WIND_CONFIG: 2gyre
+  MOM_surface_forcing RHO_0: 1035.0
+  MOM_surface_forcing RESTOREBUOY: False
+  MOM_surface_forcing LATENT_HEAT_FUSION: 3.34E+05
+  MOM_surface_forcing LATENT_HEAT_VAPORIZATION: 2.5E+06
+  MOM_surface_forcing G_EARTH: 9.8
+  MOM_surface_forcing GUST_CONST: 0.0
+  MOM_surface_forcing FIX_USTAR_GUSTLESS_BUG: True
+  MOM_surface_forcing READ_GUST_2D: False
+MOM_restart: unknown
+  MOM_restart PARALLEL_RESTARTFILES: False
+  MOM_restart RESTARTFILE from argument: MOM_forcing.res
+  MOM_restart MAX_FIELDS: 100
+  MOM_restart RESTART_CHECKSUMS_REQUIRED: True
+user_revise_forcing: unknown
+  MOM_main (MOM_driver) USE_WAVES: False
+  MOM_wave_interface USE_WAVES: False
+MOM_main (MOM_driver): unknown
+  MOM_main (MOM_driver) DT: 1200.0
+  MOM_main (MOM_driver) DT_FORCING: 2400.0
+  MOM_main (MOM_driver) TIMEUNIT: 8.64E+04
+  MOM_main (MOM_driver) DAYMAX (Time): 10:0
+  MOM_main (MOM_driver) SINGLE_STEPPING_CALL: True
+  MOM_main (MOM_driver) DT_THERM: 2400.0
+  MOM_main (MOM_driver) DIABATIC_FIRST: False
+  MOM_main (MOM_driver) RESTART_CONTROL: 3
+  MOM_main (MOM_driver) RESTINT (Time): 110:0
+  MOM_main (MOM_driver) WRITE_CPU_STEPS: 1000
+  MOM DEBUG: False
+  MOM_main (MOM_driver) ELAPSED TIME AS MASTER: False
+MOM_write_cputime: unknown
+  MOM_write_cputime MAXCPU: -1.0
+  MOM_write_cputime CPU_TIME_FILE: CPU_stats
+  MOM_write_cputime directory/CPU_TIME_FILE: ./CPU_stats
+MOM_file_parser: unknown
+  MOM_file_parser SEND_LOG_TO_STDOUT: False
+  MOM_file_parser REPORT_UNUSED_PARAMS: True
+  MOM_file_parser FATAL_UNUSED_PARAMS: False
+  MOM_file_parser DOCUMENT_FILE: MOM_parameter_doc
+  MOM_file_parser COMPLETE_DOCUMENTATION: True
+  MOM_file_parser MINIMAL_DOCUMENTATION: True
